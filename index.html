@@ -55,31 +55,35 @@
       font-weight: 700;
       font-size: 28px;
     }
-    
-    .navmenu a, .navmenu a:focus {
-        color: rgba(255, 255, 255, 0.8);
+
+    .navmenu a,
+    .navmenu a:focus {
+      color: rgba(255, 255, 255, 0.8);
     }
-    
-    .navmenu a:hover, .navmenu .active {
-        color: #ffffff !important;
+
+    .navmenu a:hover,
+    .navmenu .active {
+      color: #ffffff !important;
     }
 
     .btn-getstarted {
-        background-color: var(--sus-green);
-        color: #ffffff;
-        border-radius: 6px;
+      background-color: var(--sus-green);
+      color: #ffffff;
+      border-radius: 6px;
     }
+
     .btn-getstarted:hover {
-        background-color: #00866a;
+      background-color: #00866a;
     }
 
     .hero {
       background-color: var(--sus-light-gray);
       padding: 80px 0;
     }
-    
+
     .hero img {
-        display: none; /* Remove the old background image */
+      display: none;
+      /* Remove the old background image */
     }
 
     .hero h1 {
@@ -111,7 +115,8 @@
     }
 
     .icon-box .icon {
-      display: none; /* Hide the old icon circle */
+      display: none;
+      /* Hide the old icon circle */
     }
 
     .icon-box .title {
@@ -119,15 +124,15 @@
       font-weight: 600;
       font-size: 1.1rem;
     }
-    
+
     .icon-box .title a {
-        color: var(--sus-dark-blue);
-        text-decoration: none;
-        transition: color 0.3s;
+      color: var(--sus-dark-blue);
+      text-decoration: none;
+      transition: color 0.3s;
     }
-    
+
     .icon-box .title a:hover {
-        color: var(--sus-green);
+      color: var(--sus-green);
     }
 
     .icon-box .description {
@@ -140,13 +145,20 @@
       color: #ffffff;
       padding: 20px 0;
     }
-    
+
     .footer .copyright p {
-        color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
-    
-    .footer .copyright .sitename, .footer .credits {
-        color: #ffffff;
+
+    .footer .copyright .sitename,
+    .footer .credits {
+      color: #ffffff;
+    }
+
+    .logo-img {
+      height: 42px;
+      width: auto;
+      margin-right: 10px;
     }
   </style>
 
@@ -157,18 +169,17 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <h1 class="sitename">Módulo Controle e Avaliação do SUS 360º</h1>
-    </a>
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="https://sus360.saude.gov.br/assets/logo-sus360-v4.svg" alt="Logo SUS360" class="logo-img me-2">
+        <h1 class="sitename mb-0">Módulo Controle e Avaliação do SUS 360º</h1>
+      </a>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active">Início<br></a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
+      <nav id="navmenu" class="navmenu">
+        
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-    <a class="btn-getstarted" href="login.html">Login</a>
+      <a class="btn-getstarted" href="login.html">Login</a>
 
     </div>
   </header>
@@ -182,40 +193,49 @@
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-xl-8 col-lg-10 text-center">
             <h1>Inteligência de Dados para o Controle e Avaliação do SUS</h1>
-            <p>Analisando evidências para garantir a conformidade, otimizar recursos e aprimorar a gestão estratégica da saúde.</p>
+            <p>Analisando evidências para garantir a conformidade, otimizar recursos e aprimorar a gestão estratégica da
+              saúde.</p>
           </div>
         </div>
 
         <div class="row gy-4 mt-5">
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
             <div class="icon-box">
-              <h4 class="title"><a href="dashboards/pate-controle.html">Painel: Agora Tem Especialistas (Modalidade 3)</a></h4>
-              <p class="description">Analise a distribuição de recursos e a produção assistencial da Modalidade 3 do programa.</p>
+              <h4 class="title"><a href="dashboards/pate-controle.html">Painel: Agora Tem Especialistas (Modalidade
+                  3)</a></h4>
+              <p class="description">Analise a distribuição de recursos e a produção assistencial da Modalidade 3 do
+                programa.</p>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="200">
             <div class="icon-box">
-              <h4 class="title"><a href="dashboards/partolaqueadura.html">Qualidade de Dados: Parto e Laqueadura</a></h4>
-              <p class="description">Identifique inconsistências nos registros de procedimentos de parto e laqueadura. O painel quantifica o impacto financeiro de cada falha, apoiando a auditoria e a recuperação de recursos.</p>
+              <h4 class="title"><a href="dashboards/partolaqueadura.html">Qualidade de Dados: Parto e Laqueadura</a>
+              </h4>
+              <p class="description">Identifique inconsistências nos registros de procedimentos de parto e laqueadura. O
+                painel quantifica o impacto financeiro de cada falha, apoiando a auditoria e a recuperação de recursos.
+              </p>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
             <div class="icon-box">
-              <h4 class="title"><a href="dashboards/analiseemendas.html">Monitoramento: Emendas Parlamentares x Teto MAC</a></h4>
-              <p class="description">Compare a aplicação dos recursos da Portaria 544 com o limite do Teto MAC. Visualize indicadores de execução financeira e produção para uma gestão de recursos mais eficaz.</p>
+              <h4 class="title"><a href="dashboards/analiseemendas.html">Monitoramento: Emendas Parlamentares x Teto
+                  MAC</a></h4>
+              <p class="description">Compare a aplicação dos recursos da Portaria 544 com o limite do Teto MAC.
+                Visualize indicadores de execução financeira e produção para uma gestão de recursos mais eficaz.</p>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="400">
             <div class="icon-box">
-              <h4 class="title"><a href="dashboards/recursos-aes.html">Análise e exploração de Recursos da Atenção Especializada</a></h4>
+              <h4 class="title"><a href="dashboards/recursos-aes.html">Análise e exploração de Recursos da Atenção
+                  Especializada</a></h4>
               <p class="description">Painel que apresenta os recursos da Atenção Especializada em Saúde.</p>
             </div>
           </div><!--End Icon Box -->
 
-          
+
 
         </div>
       </div>
@@ -236,7 +256,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>

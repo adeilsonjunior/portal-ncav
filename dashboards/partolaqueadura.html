@@ -53,22 +53,25 @@
       font-weight: 700;
       font-size: 28px;
     }
-    
-    .navmenu a, .navmenu a:focus {
-        color: rgba(255, 255, 255, 0.8);
+
+    .navmenu a,
+    .navmenu a:focus {
+      color: rgba(255, 255, 255, 0.8);
     }
-    
-    .navmenu a:hover, .navmenu .active {
-        color: #ffffff !important;
+
+    .navmenu a:hover,
+    .navmenu .active {
+      color: #ffffff !important;
     }
 
     .btn-getstarted {
-        background-color: var(--sus-green);
-        color: #ffffff;
-        border-radius: 6px;
+      background-color: var(--sus-green);
+      color: #ffffff;
+      border-radius: 6px;
     }
+
     .btn-getstarted:hover {
-        background-color: #00866a;
+      background-color: #00866a;
     }
 
     .dashboard-section {
@@ -93,7 +96,8 @@
       position: relative;
       overflow: hidden;
       width: 100%;
-      padding-top: 60%; /* Aspect ratio 10:6 */
+      padding-top: 60%;
+      /* Aspect ratio 10:6 */
     }
 
     .dashboard-iframe-wrapper iframe {
@@ -113,13 +117,20 @@
       padding: 20px 0;
       margin-top: 40px;
     }
-    
+
     .footer .copyright p {
-        color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
-    
-    .footer .copyright .sitename, .footer .credits {
-        color: #ffffff;
+
+    .footer .copyright .sitename,
+    .footer .credits {
+      color: #ffffff;
+    }
+
+    .logo-img {
+      height: 42px;
+      width: auto;
+      margin-right: 10px;
     }
   </style>
 
@@ -131,13 +142,13 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="../index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">Módulo Controle e Avaliação do SUS 360º</h1>
+        <img src="https://sus360.saude.gov.br/assets/logo-sus360-v4.svg" alt="Logo SUS360" class="logo-img me-2">
+        <h1 class="sitename mb-0">Módulo Controle e Avaliação do SUS 360º</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="#dashboard" class="active">Auditoria de Produção</a></li>
+          <li><a href="../index.html">Início</a></li>          
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -176,7 +187,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
