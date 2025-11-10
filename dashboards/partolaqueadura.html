@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portal NCAV</title>
+  <title>SUS 360º - Auditoria de Parto e Laqueadura</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,13 +29,100 @@
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: OnePage
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* SUS360 Style Overrides */
+    :root {
+      --sus-dark-blue: #0a213e;
+      --sus-green: #00a885;
+      --sus-light-gray: #f0f2f5;
+      --sus-text-color: #333;
+    }
+
+    body {
+      background-color: var(--sus-light-gray);
+      font-family: 'Poppins', sans-serif;
+      color: var(--sus-text-color);
+    }
+
+    .header {
+      background-color: var(--sus-dark-blue);
+    }
+
+    .header .logo h1.sitename {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    
+    .navmenu a, .navmenu a:focus {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .navmenu a:hover, .navmenu .active {
+        color: #ffffff !important;
+    }
+
+    .btn-getstarted {
+        background-color: var(--sus-green);
+        color: #ffffff;
+        border-radius: 6px;
+    }
+    .btn-getstarted:hover {
+        background-color: #00866a;
+    }
+
+    .dashboard-section {
+      padding: 40px 0;
+    }
+
+    .dashboard-container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .dashboard-title {
+      color: var(--sus-dark-blue);
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .dashboard-iframe-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 60%; /* Aspect ratio 10:6 */
+    }
+
+    .dashboard-iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .footer {
+      background-color: var(--sus-dark-blue);
+      color: #ffffff;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+    
+    .footer .copyright p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .footer .copyright .sitename, .footer .credits {
+        color: #ffffff;
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -42,66 +131,51 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="../index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Portal NCAV</h1>
+        <h1 class="sitename">SUS 360º</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="../index.html" class="active">Home<br></a></li>
-          <!-- <li><a href="#about">Sobre</a></li> -->
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- <li><a href="#team">Equipe</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dashboards</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Análise Emendas</a></li>
-              <li class="dropdown"><a href="dashboards/analiseemendas.html"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dashboards</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="dashboards/analiseemendas.html">Análise Emendas</a></li>    
-              <li><a href="dashboards/analiseextrapolacaotetomac.html">Análise de Extrapolação de Teto MAC</a></li>
-              <li><a href="dashboards/analiseextrapolacaotetomacv2.html">Análise de Extrapolação de Teto MAC v.2</a></li>
-              <li><a href="dashboards/analiseprocedimentosreajuste.html">Análise de Procedimentos para Reajuste</a></li>
-              <li><a href="dashboards/controleprocedimento.html">Controle de Procedimentos</a></li>
-              <li><a href="dashboards/notificacoes.html">Notificações</a></li>
-              <li><a href="dashboards/tabelaomonitoramento.html">Monitoramento do Teto MAC</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="#contact">Contato</a></li> -->
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="#dashboard" class="active">Auditoria de Produção</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Login</a>
+      <a class="btn-getstarted" href="#">Login</a>
 
     </div>
   </header>
 
-  <main class="main" style="display: flex; justify-content: center; align-items: center; min-height: 90vh; margin: 0; padding: 0;">
-    <iframe title="AnalisePartoLaqueadura" width="100%" height="800"
-      src="https://app.powerbi.com/view?r=eyJrIjoiOWQwMGFjYmQtMTJjNy00ZjQ3LTgxOTctMmJhOGYyMTE2MTU1IiwidCI6IjlhNTU0YWQzLWI1MmItNDg2Mi1hMzZmLTg0ZDg5MWU1YzcwNSJ9" 
-      frameborder="0" allowFullScreen="true" style="margin: 0; padding: 0;">
-    </iframe>
+  <main class="main">
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+      <div class="container" data-aos="fade-up">
+        <div class="dashboard-container">
+          <h2 class="dashboard-title">Auditoria de Produção: Parto e Laqueadura</h2>
+          <div class="dashboard-iframe-wrapper">
+            <iframe title="AnalisePartoLaqueadura"
+              src="https://app.powerbi.com/view?r=eyJrIjoiOWQwMGFjYmQtMTJjNy00ZjQ3LTgxOTctMmJhOGYyMTE2MTU1IiwidCI6IjlhNTU0YWQzLWI1MmItNDg2Mi1hMzZmLTg0ZDg5MWU1YzcwNSJ9"
+              allowFullScreen="true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Dashboard Section -->
+
   </main>
 
-  
- 
-    <!-- Scroll Top -->
+  <footer id="footer" class="footer">
+    <div class="container copyright text-center">
+      <p>© 2025 <strong class="px-1 sitename">SUS 360º</strong> • Ministério da Saude</p>
+      <div class="credits">
+        Sistema desenvolvido na CGSI • Coordenação-Geral de Gestão de Sistemas de Informações em Saúde (DRAC/SAES)
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
